@@ -3,22 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* smooth scrolling */
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
 body{
   width: 100vw;
-  height: 100vh;
+  position: relative;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: rgb(53, 53, 53);
+  background-color: rgb(225, 225, 225);
+  min-width: 372px;
+}
+.scrolling-box{
+  margin: 2rem;
+  text-align: justify;
+} 
+section{
   position: relative;
   display: flex;
   flex-direction: column;
-  line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
-  background-color: rgb(225, 225, 225);
-  color: rgb(53, 53, 53);
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  scroll-snap-align: start;
 }
 h1{
   text-transform: uppercase;
-  font-size: 2.5rem;
   text-align: end;
+  font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 span.title{
@@ -33,6 +49,48 @@ h2.name{
 p.intro{
   margin: 30px 0 40px 0;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+p.main{
+  line-height: 1.5;
+}
+.scroll-link{
+  margin: 2rem 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: rgb(53, 53, 53);
+}
+.scroll-link:hover{
+  text-decoration: line-through;
+  font-size: 1.1rem;
+  transition: all 1s ease-in-out; 
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  max-height: 46px;
+  text-align: center;
+  justify-content: center;
+}
+.copyright{
+  width: 70%; 
+  text-align: center; 
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.273); 
+  line-height: 0.2em;
+  margin: 0 15% 10px; 
+  font-size: 0.6rem;
+}
+.copyright span { 
+  background: rgb(225, 224, 224); 
+  padding: 0 20px; 
+}
+.icon{
+  width: 3%;
+  margin: 0 10px;
+  opacity: 0.3;
 }
 /* nav bar */
 header {
@@ -44,7 +102,7 @@ header {
   right: 0;
   left: 0;
   width: 100%;
-  min-width: 350px;
+  min-width: 372px;
   background-image: linear-gradient(180deg, #1d1e229c, rgba(29, 30, 34, 0.357), transparent);
   mix-blend-mode:luminosity;
 }
@@ -97,7 +155,7 @@ header {
   transition: all 0.3s ease-in-out;
   background-color: #1d1e22;
 }
-
+/* hamburger menu small screen */
 @media only screen and (max-width: 768px) {
   .hamburger{
     display: block;
@@ -113,7 +171,6 @@ header {
     transform: translateY(-8px) rotate(-45deg);
     background-color:  rgb(161, 159, 159);
   }
-
   .nav-menu{
     position: fixed;
     top: -100%;
@@ -145,83 +202,33 @@ header {
   }
 }
 
-/* smooth scrolling */
-html{
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
-.scrolling-box{
-  height: 50%;
-  min-width: 300px;
-  margin: 2rem;
-  text-align: justify;
-  /* border: red solid; */
-}
-.scroll-link{
-  margin: 2rem 0;
-  text-decoration: none;
-  color: #1d1e22;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-}
-.scroll-link:hover{
-  text-decoration: line-through;
-  font-size: 1.1rem;
-  transition: all 1s ease-in-out; 
-}
-section{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  font-size: 1rem;
-  scroll-snap-align: start;
-}
-footer{
-  position: fixed;
-  bottom: 0;
-  text-align: center;
-  justify-content: center;
-}
-.copyright{
-  width: 70%; 
-  text-align: center; 
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.273); 
-  line-height: 0.2em;
-  margin: 0 15% 10px; 
-  font-size: 0.5rem;
-}
-.copyright span { 
-  background: rgb(225, 224, 224); 
-  padding: 0 20px; 
-}
-.icon{
-  width: 3%;
-  margin: 0 10px;
-  opacity: 0.3;
-}
-@media only screen and (max-width: 450px) {
-  h1{
-    margin: 2rem 0 1.5rem 0;
-    
+@media only screen and (max-width: 720px) {
+  body{
+    font-size: 1rem;
   }
   p.intro{
-    margin: 10px 0 20px 0;
-
+    line-height: 1rem;
   }
 } 
-@media only screen and (max-width: 320) {
-  /* body{
-    min-width: 320px;
-    line-height: 1;
+@media only screen and (max-width: 545px) {
+  body{
+    font-size: 0.9rem;
   }
-  section{
-    max-height: 100vh;
+  p.intro{
+    line-height: 1rem;
   }
-  h1{
-    margin-top: 500px;
-    font-size: 1rem;
-  } */
+} 
+@media only screen and (max-width: 450px) {
+  body{
+    font-size: 0.9rem;
+  }
+  p.intro{
+    line-height: 1rem;
+  }
+   h1{
+    font-size: 2rem;
+  }
+  span.title{
+    font-size: 1.5rem;
+  }
 } 
