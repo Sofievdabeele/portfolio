@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
     
     <title>Portfolio</title>
@@ -12,7 +15,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="#about" class="nav-branding">-S-</a>
+            <a href="#about" class="nav-branding">[s]</a>
 
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -32,37 +35,46 @@
                 <span class="bar"></span>
             </div>
         </nav>
-
     </header>
 
     <main>
 
     <div class="scrolling-box">
-        <div class="main" id="about">
-            <h2>About me</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corrupti natus ratione expedita sapiente accusantium, quod harum voluptas praesentium perspiciatis quia eius minima facilis incidunt sit recusandae culpa unde dicta.
-                Incidunt sunt explicabo aperiam neque aliquam modi sed recusandae similique hic, minima necessitatibus molestiae culpa, quae enim beatae non sint. Illum earum magnam, totam obcaecati amet voluptate qui maxime sapiente.</p>
-            <a href="#projects">Projects</a>
-         </div>
+        <section class="main" id="about">
+            <h2 class="name">Sofie Van Den Abeele</h2>
+            <h1>[<span class="title"> web developer </span>]</h1>
+            <p class="intro">Curently studying at BeCode Gent</p>
+            <p>Passionate and dedicated web developer with a  foundation in graphic design. Offering strong communication and colla-boration skills.
+                I am committed to delivering high-quality work and am always eager to learn and improve my skills.</p>
+            <a class="scroll-link" href="#projects">- Projects -</a>
+         </section>
 
-        <div class="main" id="projects">
-            <h2>Projects</h2>
+        <section class="main" id="projects">
+            <h1>[<span class="title"> Projects </span>]</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corrupti natus ratione expedita sapiente accusantium, quod harum voluptas praesentium perspiciatis quia eius minima facilis incidunt sit recusandae culpa unde dicta.
                 Incidunt sunt explicabo aperiam neque aliquam modi sed recusandae similique hic, minima necessitatibus molestiae culpa, quae enim beatae non sint. Illum earum magnam, totam obcaecati amet voluptate qui maxime sapiente.</p>
-            <a href="#contact">Contact</a>
-        </div>
+            <a class="scroll-link" href="#contact">- Contact -</a>
+        </section>
 
-        <div class="main" id="contact">
-            <h2>Contact</h2>
+        <section class="main" id="contact">
+            <h1>[<span class="title"> Contact </span>]</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis corrupti natus ratione expedita sapiente accusantium, quod harum voluptas praesentium perspiciatis quia eius minima facilis incidunt sit recusandae culpa unde dicta.
                 Incidunt sunt explicabo aperiam neque aliquam modi sed recusandae similique hic, minima necessitatibus molestiae culpa, quae enim beatae non sint. Illum earum magnam, totam obcaecati amet voluptate qui maxime sapiente.</p>
-            <a href="#about">About me</a>
-        </div>
+            <a class="scroll-link" href="#about">- About me -</a>
+        </section>
     </div>
 
     </main>
 
-    <footer> copyright</footer>
+    <footer> 
+       
+        <p class="copyright"><span>© Copyright 2023 • Sofie Van Den Abeele</span></p>
+            
+        </div>
+        <a href="mailto:sofie.vdabeele@gmail.com"><img class="icon" src="/icons/email-black.png" alt="email"></a>
+        <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BwLmnDlLTRe%2BEX496zd5L%2BQ%3D%3D"><img class="icon" src="/icons/linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/Sofievdabeele"><img class="icon" src="/icons/github.png" alt="github"></a>
+    </footer>
     </div>
 </body>
 </html>
