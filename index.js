@@ -14,4 +14,32 @@ document.querySelectorAll(".nav-link").forEach(n => n.
     navMenu.classList.remove("active");
   }))
 
-  
+// dark mode
+const body = document.querySelector("body");
+const toggle = document.querySelector(".toggle");
+const footer = document.querySelector("footer");
+const copyright= document.querySelector(".copyright");
+const span = document.querySelector(".copyright span");
+const header = document.querySelector("header");
+const navBranding = document.querySelector(".nav-branding");
+const navLink = document.querySelector(".nav-link");
+const bar = document.querySelector(".bar");
+
+toggle.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  footer.classList.toggle("dark");
+  copyright.classList.toggle("dark");
+  span.classList.toggle("dark");
+  header.classList.toggle("dark");
+  navBranding.classList.toggle("dark");
+  // navLink.classList.toggle("dark");
+  bar.classList.toggle("dark");
+  navMenu.classList.toggle("dark");
+
+
+});
+
+toggle.addEventListener("click", () => {
+  toggle.classList.toggle("active")
+});
+
