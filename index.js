@@ -24,6 +24,7 @@ const header = document.querySelector("header");
 const navBranding = document.querySelector(".nav-branding");
 const navLink = document.querySelector(".nav-link");
 const bar = document.querySelector(".bar");
+const scrollLink = document.querySelector(".scroll-link")
 
 toggle.addEventListener("click", () => {
   body.classList.toggle("dark");
@@ -35,6 +36,9 @@ toggle.addEventListener("click", () => {
   // navLink.classList.toggle("dark");
   bar.classList.toggle("dark");
   navMenu.classList.toggle("dark");
+  scrollLink.classList.toggle("dark");
+
+  
 
 
 });
