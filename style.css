@@ -64,14 +64,15 @@ p.main{
   justify-content: space-around;
 }
 a.project-link{
-  outline: solid red;
+  outline: solid black;
+  border-radius: 25px;
   height: 200px;
   width: 200px;
   margin: 5px;
   filter: saturate(0);
   transition: 0.6s ease;
   margin: 20px;
-
+  text-align: center;
 }
 a.project-link:hover{
 transform: scale(1.5);
@@ -80,16 +81,21 @@ filter: saturate(1);
 a#project-bnq{
   background-image: url(/icons/beats&quiet-icon-green.png);
   background-size: contain;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 a#project-weather{
   background-image: url(/icons/weather.png);
   background-size: contain;
 }
+a#project-travel{
+  background-image: url(/icons/rollingroads.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 a#project-beer{
   background-image: url(/icons/beer-app.png);
   background-size: cover;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 }
 /* contact page */
 .info-container{
