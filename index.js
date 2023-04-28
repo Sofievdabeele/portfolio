@@ -37,10 +37,6 @@ toggle.addEventListener("click", () => {
   bar.classList.toggle("dark");
   navMenu.classList.toggle("dark");
   scrollLink.classList.toggle("dark");
-
-  
-
-
 });
 
 toggle.addEventListener("click", () => {
