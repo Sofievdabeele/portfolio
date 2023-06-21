@@ -10,9 +10,13 @@ Table of Contents
 - Contact
   
 => Light version:
+
+
 ![Screenshot portfoliolight](https://github.com/Sofievdabeele/portfolio/assets/120273548/f016af2f-abc0-4f17-a701-d665ec078391)
 
 => Dark version:
+
+
 ![Screenshot portfoliodark](https://github.com/Sofievdabeele/portfolio/assets/120273548/d17d077f-2a4e-4246-a0b1-28cb4ff73050)
 
 My portfolio contains HTML, CSS and JS.
