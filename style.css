@@ -58,7 +58,7 @@ p.intro{
   font-style: italic;
 }
 p.main{
-  line-height: 1;
+  text-align: justify;
 }
 /* .typewriter{
   margin: 3rem 0;
@@ -230,7 +230,7 @@ header {
   backdrop-filter: blur(5px);
 }
 .navbar {
-  z-index: 100;
+  z-index: 99;
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
@@ -256,7 +256,7 @@ header {
   list-style: none;
 }
 .nav-link {
-  color:  rgb(54, 54, 54);
+  color:  rgb(110, 109, 109);
   text-decoration: none;
 }
 .nav-link:hover{
@@ -285,7 +285,7 @@ body.dark{
 } 
 footer.dark{
   /* background-color: rgb(41, 41, 41); */
-  background: linear-gradient(180deg,  rgba(255, 255, 255, 0.072) 80%, rgba(0, 0, 0, 0.914) 0%);
+  background: rgb(41, 41, 41);
   mix-blend-mode: luminosity; 
   backdrop-filter: blur(5px);
 }
@@ -321,6 +321,7 @@ header.dark{
 } 
 .nav-menu.dark.active{
   height: 700%;
+  z-index: 100;
 }
 /* toggle dark background */
 .toggle-container{
@@ -386,10 +387,12 @@ header.dark{
   .nav-menu.active{
     top: 0;
     left: 0;
+    height: 700%;
   }
   .nav-link{
     color: rgb(126, 124, 124);
     font-size: 1rem;
+    z-index: 100;
   }
   .nav-link:hover{
     color:  white;
@@ -402,6 +405,10 @@ header.dark{
     width: 120px;
     height: 120px;
   }
+  p.intro{
+    line-height: 1rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 @media only screen and (max-width: 720px) {
   body{
@@ -409,6 +416,8 @@ header.dark{
   }
   p.intro{
     line-height: 1rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   a.project-link{
     width: 100px;
@@ -422,6 +431,8 @@ header.dark{
   }
   p.intro{
     line-height: 1rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 } 
 @media only screen and (max-width: 450px) {
@@ -430,6 +441,7 @@ header.dark{
   }
   p.intro{
     line-height: 1rem;
+    margin-top: 50px;
   }
    h1{
     font-size: 2rem;
