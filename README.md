@@ -21,5 +21,9 @@ Table of Contents
 
 My portfolio contains HTML, CSS and JS.
 
-https://portfoliosofievandenabeele.netlify.app/#about
+
+Check finished product on:
+
+https://portfoliosofievandenabeele.netlify.app
+
 
